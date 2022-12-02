@@ -21,7 +21,7 @@ function Home() {
     <>
       <Box>
         <MyCarousel />
-        <Container maxW={"container.xl"} minH={"100vh"} p="16">
+        {/* <Container maxW={"container.xl"} minH={"100vh"} p="16">
           <Heading
             textTransform={"uppercase"}
             py="2"
@@ -66,7 +66,56 @@ function Home() {
               explicabo omnis officiis autem dolorum!
             </Text>
           </Stack>
-        </Container>
+        </Container> */}
+        <Box h={"100vh"}>
+          <Heading
+            textTransform={"uppercase"}
+            py="2"
+            w={"fit-content"}
+            borderBottom={"2px solid"}
+            m="auto"
+          >
+            Services
+          </Heading>
+          <Stack
+            direction={["column", "row"]}
+            h="100vh"
+            spacing="24px"
+            alignItems={"center"}
+            justifyContent={"center"}
+          >
+            <Image
+              // boxSize="450px"
+              boxSize={["250", "400"]}
+              objectFit="cover"
+              borderRadius={"2xl"}
+              src="https://bit.ly/dan-abramov"
+              alt="Dan Abramov"
+            />
+            <Box>
+              <Text
+                boxSize={["250", "400"]}
+                overflow={["scroll", "hidden"]}
+                textAlign="center"
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nemo
+                tempora deleniti quod, est eos veniam autem asperiores rem, nam
+                laudantium ut, similique ducimus amet sequi et voluptas iusto
+                rerum at aliquid numquam corporis ipsa reprehenderit? Porro
+                iusto magnam, sit vero deleniti, non nemo rem accusamus neque,
+                quibusdam ab. Libero, reprehenderit recusandae labore eaque,
+                aspernatur aliquid modi soluta ullam voluptatum unde repellat in
+                molestias quod? Doloribus ratione illum quisquam earum
+                consequuntur nam voluptatem, velit culpa maiores. Inventore esse
+                illum excepturi dolores est natus aliquid maiores sunt omnis
+                deserunt accusantium amet enim eos adipisci minima hic, nam
+                provident quo aperiam quasi vel? Dignissimos accusantium aliquid
+                aut vel explicabo voluptatum molestias fugit harum reprehenderit
+                incidunt. Quis cumque explicabo omnis officiis autem dolorum!
+              </Text>
+            </Box>
+          </Stack>
+        </Box>
       </Box>
     </>
   );

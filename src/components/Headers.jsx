@@ -26,6 +26,7 @@ function Headers() {
       <Button
         ref={btnRef}
         onClick={onOpen}
+        zIndex={"overlay"}
         pos={"fixed"}
         left={"4"}
         top={"4"}

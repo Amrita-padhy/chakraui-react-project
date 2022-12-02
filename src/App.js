@@ -7,6 +7,8 @@ import ColorModeSwitcher from "./ColorModeSwitcher";
 import Header from "../src/components/Headers";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
+import Videos from "./components/Videos";
+import Upload from "./components/Upload";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/videos" element={<Videos />} />
+        <Route path="/upload" element={<Upload />} />
       </Routes>
       <Footer />
     </Router>
